@@ -1,6 +1,5 @@
 # Machine Learning for Stock Trading
 
-## Output
 ![compare.png](images/compare.png)
 
 ## Code Description
