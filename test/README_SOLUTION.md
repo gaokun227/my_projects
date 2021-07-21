@@ -18,9 +18,11 @@
 ## How to run the codes
 
 * To run solution_nltk.py, do the following
+
   python solution_nltk.py 
 
 * To run test_solution_nltk.py, do the following
+
   python test_solution_nltk.py 
 
 ## Potential areas for improvement
@@ -33,12 +35,12 @@
 
 ## Requirements
 - [NLTK](https://www.nltk.org)
-  pip install nltk 
-  nltk.download('punkt') 
-  nltk.download('averaged_perceptron_tagger') 
+  * pip install nltk 
+  * nltk.download('punkt') 
+  * nltk.download('averaged_perceptron_tagger') 
 
 - [PANDAS](https://pandas.pydata.org/)
-  pip install pandas 
+  * pip install pandas 
 
 Your task is to write Python code that extracts features that can then be used to train a hypothetical grammatical error correction system.
 
