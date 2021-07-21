@@ -8,8 +8,9 @@
 
 * `README_SOLUTION.md` - the description of the codes by Shuwen Zhang  (this file).
 
-* `solution_nltk.py` - the python script that contains the necessary functions that extract the features from the given sets of sentences in sentences.csv.                                                       
-* `test_solution_nltk.py` - the python script that test the main function in solution_nltk.py with various possile scenarios. 
+* `solution_nltk.py` - the python script that contains the necessary functions that extract the features from the given sets of sentences in `sentences.csv`.
+
+* `test_solution_nltk.py` - the python script that test the main function in `solution_nltk.py` with various possile scenarios. 
 
 ## Overview of solution_nltk.py
 
@@ -17,13 +18,22 @@
 
 ## How to run the codes
 
-* To run solution_nltk.py, do the following
+* To run `solution_nltk.py`, do the following
 
-  python solution_nltk.py 
+  python `solution_nltk.py` 
 
-* To run test_solution_nltk.py, do the following
+* To run `test_solution_nltk.py`, do the following
 
-  python test_solution_nltk.py 
+  python `test_solution_nltk.py`
+
+## Requirements
+- [NLTK](https://www.nltk.org)
+  * pip install nltk 
+  * nltk.download('punkt') 
+  * nltk.download('averaged_perceptron_tagger') 
+
+- [PANDAS](https://pandas.pydata.org/)
+  * pip install pandas 
 
 ## Potential areas for improvement
 
@@ -35,15 +45,10 @@
 
   In my solution I did not remove the punctuation marks from the sentence before extracting the features as doing so can change the location of the preposition and therefore the 12 token and tag features. If the punctuation marks should not be included in the features (not clarified in the task description), I could add a preprocessing step to remove all of them in the sentences. 
 
-## Requirements
-- [NLTK](https://www.nltk.org)
-  * pip install nltk 
-  * nltk.download('punkt') 
-  * nltk.download('averaged_perceptron_tagger') 
 
-- [PANDAS](https://pandas.pydata.org/)
-  * pip install pandas 
 
+
+== do delete
 Your task is to write Python code that extracts features that can then be used to train a hypothetical grammatical error correction system.
 
 The code should meet the following requirements:
