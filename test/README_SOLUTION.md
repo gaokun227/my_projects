@@ -57,7 +57,7 @@ This script test out the get_features() function in `solution_nltk.py` with some
 }
 ```
 
-* Note some features are padd. The w features with 'n/a' and the t features with 'N/A'.
+* *Note* some features are padd if there are not enough elements: the w features are padded with 'n/a' and the t features are padded with 'N/A'.
 
 #### The input is not a list variable
 
