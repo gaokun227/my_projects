@@ -16,11 +16,11 @@
 
 This script contains three functions that are needed to fulfill this programing task.
 
-* preprocess(sentence)
+#### preprocess(sentence)
 
   * the function to correct typos in a given sentence
 
-* get_features(sentence_list)
+#### get_features(sentence_list)
 
   *  the function to extract features associated with prepositions from a given sentence
 
@@ -29,7 +29,7 @@ This script contains three functions that are needed to fulfill this programing 
 
   *  return: a list of json objects with features extracted from each sentence
 
-* perform_required_task():
+### perform_required_task():
 
   * the function to read in the sentences.csv data and obtain the 12 required features
 
