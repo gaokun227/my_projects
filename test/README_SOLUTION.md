@@ -29,9 +29,11 @@
 
 * Typos
 
-  Not surprisingly that there are typos in the sentences and sometimes the typo is the preposition itself (e.g., 'af' in sentence 11). It is desirable to correct these typos before the feature extraction step. At this point, I've only implemented a simple solution to correct the typos I've noticed due to the time limitation. For further work, it make sense to implement the spelling correction features in NLTK.
+  Not surprisingly that there are typos in the sentences and sometimes the typo is the preposition itself (e.g., 'af' in sentence 11). It is desirable to correct these typos before the feature extraction step. At this point, I've only implemented a simple solution to correct the typos I've noticed due to the time limitation. For further work, it make sense to implement the spelling correction capacity in NLTK.
 
-* punctuation marks
+* Punctuation marks
+
+  In my solution I did not remove the punctuation marks from the sentence before extracting the features as doing so can change the location of the preposition and therefore the 12 token and tag features. If the punctuation marks should not be included in the features (not clarified in the task description), I could add a preprocessing step to remove all of them in the sentences. 
 
 ## Requirements
 - [NLTK](https://www.nltk.org)
