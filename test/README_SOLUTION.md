@@ -52,8 +52,8 @@ This script test out the get_features() function in `solution_nltk.py` with some
 
 ```json
 {"id":"1_1",
- "prep": "with",
- "features": ['live with', 'with love', 'live with love', 'n/a live with', 'with love n/a', 'n/a live with love n/a', 'JJ IN', 'IN NN', 'JJ IN NN', 'N/A JJ IN', 'IN NN N/A', 'N/A JJ IN NN N/A']]
+ "prep": with",
+ "features": ["live with", "with love", "live with love", "n/a live with", "with love n/a", "n/a live with love n/a", "JJ IN", "IN NN", "JJ IN NN", "N/A JJ IN", "IN NN N/A", "N/A JJ IN NN N/A"]]
 }
 ```
 
