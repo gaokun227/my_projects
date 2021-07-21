@@ -18,19 +18,20 @@ This script contains three functions that are needed to fulfill this programing 
 
 * preprocess(sentence)
 
-  the function to correct typos in a given sentence
+  * the function to correct typos in a given sentence
 
 * get_features(sentence_list)
 
-    function to extract features associated with prepositions from a given sentence
-    input:  a list of sentences;
+  *  the function to extract features associated with prepositions from a given sentence
+
+  *  input: a list of sentences;
             e.g., ['I am sentence1', 'I am sentence2', ...]
 
-    return: a list of json objects with features extracted from each sentence
+  *  return: a list of json objects with features extracted from each sentence
 
 * perform_required_task():
 
-    function to read in the sentences.csv data and obtain the 12 required features
+  * the function to read in the sentences.csv data and obtain the 12 required features
 
     
 ## Sample Outputs from test_solution_nltk.py
