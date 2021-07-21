@@ -39,6 +39,43 @@ This python script contains all the functions that are needed to fulfill the req
     
 ## Sample Outputs from test_solution_nltk.py
 
+This script test out the get_features() function in `solution_nltk.py` with some good or bad inputs. Here are some sample output returned from get_features().
+
+#### A sentence with the word "to" followed by a verb.
+ * input: ["I am going to buy a car"]
+ * the result is simply an empty list since there is no preposition in the sentence.
+
+#### A very short sentence with only three words
+ * input: ["live with love"]
+ * the result is as follows:
+
+
+```json
+{"id":"1_1",
+ "prep": "with",
+ "features": ['live with', 'with love', 'live with love', 'n/a live with', 'with love n/a', 'n/a live with love n/a', 'JJ IN', 'IN NN', 'JJ IN NN', 'N/A JJ IN', 'IN NN N/A', 'N/A JJ IN NN N/A']]
+}
+```
+
+* Note some features are padd. The w features with 'n/a' and the t features with 'N/A'.
+
+#### The input is not a list variable
+
+* input: i am not a list
+
+* The function returns an empty list and print out the following error message
+
+  "ERROR the input is not a list; check your input"
+
+#### The input is a list but does not contain sentences
+
+* input: [1, 2, 3]
+
+* The function returns an empty list and print out the following error message
+
+  "ERROR the input is not a sentence list; check your input"
+
+
 ## How to run the codes
 
 * To run `solution_nltk.py`, do the following
@@ -62,7 +99,7 @@ This python script contains all the functions that are needed to fulfill the req
 
 * Typos
 
-  Not surprisingly that there are typos in the sentences and sometimes the typo is the preposition itself (e.g., 'af' in sentence 11). It is desirable to correct these typos before the feature extraction step. At this point, I've only implemented a simple solution to correct the typos I've noticed due to the time limitation. For further work, it make sense to implement the spelling correction capacity in NLTK.
+  Not surprisingly there are typos in the sentences and sometimes the typo is the preposition itself (e.g., 'af' in sentence 11). It is desirable to correct these typos before the feature extraction step. At this point, I've only implemented a simple solution to correct the typos I've noticed due to the time limitation. For further work, it make sense to implement the spelling correction capacity in NLTK.
 
 * Punctuation marks
 
@@ -109,23 +146,13 @@ Each set of features should have an id that consists of the sentence number and 
 ### Output format
 A file containing one output line per preposition consisting of a JSON object with the following structure:
 
-```json
-{"id": "<preposition_identifier>", 
- "prep": "<preposition>", 
- "features": "<list_of_features>"}
-```
+
 
 ### Example
 
 For example, the output for the first preposition `in` which occurs at token position 6 in the the first sentence with id `1` should be the following JSON:
 
-```json
-{"id":"1_5",
- "prep": "in",
- "features": ["entered in", "in to", "entered in to", "once entered in", "in to the", "once entered in to the",
-              "VBN IN", "IN TO", "VBN IN TO", "RB VBN IN", "IN TO DT", "RB VBN IN TO DT"]
-}
-```
+
 
 ### Suggested Python libraries
 Feel free to use any publicly available Python libraries for tokenizing and tagging the input sentences. Here are a couple of suggestions: 
