@@ -23,7 +23,13 @@
 * To run test_solution_nltk.py, do the following
   * python test_solution_nltk.py 
 
-## Potential areas for further improvement
+## Potential areas for improvement
+
+* Typos
+
+  Not surprisingly that there are typos in the sentences and sometimes the typo is the preposition itself (e.g., 'af' in sentence 11). It is desirable to correct these typos before the feature extraction step. At this point, I've only implemented a simple solution to correct the typos I've noticed due to the time limitation. For further work, it make sense to implement the spelling correction features in NLTK.
+
+* punctuation marks
 
 ## Requirements
 - [NLTK](https://www.nltk.org)
@@ -32,7 +38,7 @@
   * nltk.download('averaged_perceptron_tagger') 
 
 - [PANDAS](https://pandas.pydata.org/)
-  * pip install pandas *
+  * pip install pandas 
 
 Your task is to write Python code that extracts features that can then be used to train a hypothetical grammatical error correction system.
 
