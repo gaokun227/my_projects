@@ -14,7 +14,7 @@
 
 ## Overview of solution_nltk.py
 
-This script contains three functions that are needed to fulfill this programing task.
+This python script contains all the functions that are needed to fulfill the requirements of this programing task.
 
 #### preprocess(sentence)
 
@@ -29,10 +29,13 @@ This script contains three functions that are needed to fulfill this programing 
 
   *  return: a list of json objects with features extracted from each sentence
 
-### perform_required_task():
+#### perform_required_task():
 
   * the function to read in the sentences.csv data and obtain the 12 required features
 
+#### main()
+
+   * the main function simply calls perform_required_task() and print out all the extracted features
     
 ## Sample Outputs from test_solution_nltk.py
 
